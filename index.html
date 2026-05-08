@@ -140,6 +140,17 @@
       filter: brightness(1);
     }
 
+    /* Ensure the link covers the whole panel area */
+    .panel a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 10; /* Keeps the link on top of the images and overlays */
+    }
+
   </style>
 </head>
 <body>
@@ -174,27 +185,31 @@
     </div>
 
     <div class="panel p-w1">
-      <div class="work-fill">
-        <img src="proj1.png" alt="Work 01">
-      </div>
-      <div class="work-num-badge">LinkedUP - ICS</div>
-      <div class="work-overlay">
-        <p style="font-size: 0.8rem; font-weight: bold; color: #7ab8f5; letter-spacing: 1px;">Typescript</p>
-        <h4 style="font-size: 1.4rem; margin-top: 2px;margin-left: -10px;">Backend Developer · 2025</h4>
-      </div>
+      <a href="https://linkedup-ics.online" target="_blank">
+        <div class="work-fill">
+          <img src="proj1.png" alt="Work 01">
+        </div>
+        <div class="work-num-badge">LinkedUP - ICS</div>
+        <div class="work-overlay">
+          <p style="font-size: 0.8rem; font-weight: bold; color: #7ab8f5; letter-spacing: 1px;">Typescript</p>
+          <h4 style="font-size: 1.4rem; margin-top: 2px; margin-left: -10px;">Backend Developer · 2025</h4>
+        </div>
+      </a>
     </div>
-
+    
     <div class="panel p-w2">
-      <div class="work-fill">
-        <img src="proj2.png" alt="Work 02">
-      </div>
-      <div class="work-num-badge">ACSS Week 2026 Page</div>
-      <div class="work-overlay">
-        <p style="font-size: 0.8rem; font-weight: bold; color: #7ab8f5; letter-spacing: 1px;">Typescript</p>
-        <h4 style="font-size: 1.4rem; margin-top: 2px;margin-left: -10px;">Project Manager · 2026</h4>
-      </div>
+      <a href="https://aw2026.vercel.app/" target="_blank">
+        <div class="work-fill">
+          <img src="proj2.png" alt="Work 02">
+        </div>
+        <div class="work-num-badge">ACSS Week 2026 Page</div>
+        <div class="work-overlay">
+          <p style="font-size: 0.8rem; font-weight: bold; color: #7ab8f5; letter-spacing: 1px;">Typescript</p>
+          <h4 style="font-size: 1.4rem; margin-top: 2px; margin-left: -10px;">Project Manager · 2026</h4>
+        </div>
+      </a>
     </div>
-
+    
     <div class="panel p-w3">
       <div class="work-fill">
         <img src="proj3.png" alt="Work 03">
